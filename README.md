@@ -1,4 +1,4 @@
 # InflationCalc
 
-* ios dev: [![Build status](https://build.appcenter.ms/v0.1/apps/9407320c-38a0-4ede-bc69-748fd5b76d24/branches/dev/badge)](https://appcenter.ms)
-* android dev: [![Build status](https://build.appcenter.ms/v0.1/apps/7ab7c86b-f9e8-4a63-88da-29de6c32c339/branches/dev/badge)](https://appcenter.ms)
+* ios dev: [![Build status](https://build.appcenter.ms/v0.1/apps/b06c54d9-5970-4027-8fdb-8d553869a6be/branches/dev/badge)](https://appcenter.ms)
+* android dev: [![Build status](https://build.appcenter.ms/v0.1/apps/69ea6e77-d729-4efe-8286-fbcea94107be/branches/dev/badge)](https://appcenter.ms)
