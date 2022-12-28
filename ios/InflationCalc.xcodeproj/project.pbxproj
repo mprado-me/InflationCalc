@@ -15,10 +15,19 @@
 		7699B88040F8A987B510C191 /* libPods-InflationCalc-InflationCalcTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-InflationCalc-InflationCalcTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A94437FF294CCD9F000D24AC /* AppCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = A94437FE294CCD9F000D24AC /* AppCenter-Config.plist */; };
+		A9443807295CE4D9000D24AC /* InflationCalcUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9443806295CE4D9000D24AC /* InflationCalcUITests.m */; };
+		A9443809295CE4D9000D24AC /* InflationCalcUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9443808295CE4D9000D24AC /* InflationCalcUITestsLaunchTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = InflationCalc;
+		};
+		A944380A295CE4D9000D24AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
@@ -45,6 +54,9 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = InflationCalc/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-InflationCalc-InflationCalcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InflationCalc-InflationCalcTests.release.xcconfig"; path = "Target Support Files/Pods-InflationCalc-InflationCalcTests/Pods-InflationCalc-InflationCalcTests.release.xcconfig"; sourceTree = "<group>"; };
 		A94437FE294CCD9F000D24AC /* AppCenter-Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppCenter-Config.plist"; sourceTree = "<group>"; };
+		A9443804295CE4D9000D24AC /* InflationCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InflationCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9443806295CE4D9000D24AC /* InflationCalcUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InflationCalcUITests.m; sourceTree = "<group>"; };
+		A9443808295CE4D9000D24AC /* InflationCalcUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InflationCalcUITestsLaunchTests.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -62,6 +74,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C80B921A6F3F58F76C31292 /* libPods-InflationCalc.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9443801295CE4D9000D24AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +141,7 @@
 				13B07FAE1A68108700A75B9A /* InflationCalc */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* InflationCalcTests */,
+				A9443805295CE4D9000D24AC /* InflationCalcUITests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -136,8 +156,18 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* InflationCalc.app */,
 				00E356EE1AD99517003FC87E /* InflationCalcTests.xctest */,
+				A9443804295CE4D9000D24AC /* InflationCalcUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A9443805295CE4D9000D24AC /* InflationCalcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9443806295CE4D9000D24AC /* InflationCalcUITests.m */,
+				A9443808295CE4D9000D24AC /* InflationCalcUITestsLaunchTests.m */,
+			);
+			path = InflationCalcUITests;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -197,6 +227,24 @@
 			productReference = 13B07F961A680F5B00A75B9A /* InflationCalc.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A9443803295CE4D9000D24AC /* InflationCalcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A944380E295CE4D9000D24AC /* Build configuration list for PBXNativeTarget "InflationCalcUITests" */;
+			buildPhases = (
+				A9443800295CE4D9000D24AC /* Sources */,
+				A9443801295CE4D9000D24AC /* Frameworks */,
+				A9443802295CE4D9000D24AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A944380B295CE4D9000D24AC /* PBXTargetDependency */,
+			);
+			name = InflationCalcUITests;
+			productName = InflationCalcUITests;
+			productReference = A9443804295CE4D9000D24AC /* InflationCalcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,6 +259,10 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
+					};
+					A9443803295CE4D9000D24AC = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 				};
 			};
@@ -229,6 +281,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* InflationCalc */,
 				00E356ED1AD99517003FC87E /* InflationCalcTests */,
+				A9443803295CE4D9000D24AC /* InflationCalcUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,6 +301,13 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				A94437FF294CCD9F000D24AC /* AppCenter-Config.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9443802295CE4D9000D24AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +481,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9443800295CE4D9000D24AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9443809295CE4D9000D24AC /* InflationCalcUITestsLaunchTests.m in Sources */,
+				A9443807295CE4D9000D24AC /* InflationCalcUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -428,6 +497,11 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* InflationCalc */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		A944380B295CE4D9000D24AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* InflationCalc */;
+			targetProxy = A944380A295CE4D9000D24AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -670,6 +744,58 @@
 			};
 			name = Release;
 		};
+		A944380C295CE4D9000D24AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "mprado-tech.InflationCalcUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InflationCalc;
+			};
+			name = Debug;
+		};
+		A944380D295CE4D9000D24AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "mprado-tech.InflationCalcUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InflationCalc;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -696,6 +822,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A944380E295CE4D9000D24AC /* Build configuration list for PBXNativeTarget "InflationCalcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A944380C295CE4D9000D24AC /* Debug */,
+				A944380D295CE4D9000D24AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
