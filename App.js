@@ -86,6 +86,7 @@ class App extends React.Component {
           onChangeText={timeInYears => this.setState({timeInYears})}
         />
         <Button
+          key={'calculate-inflation-button'}
           title="Calculate inflation"
           onPress={() => {
             this.calculate();
